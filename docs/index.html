@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roton Portfolio</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <a href="page.html">test</a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">ROTON</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-white">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h3>Hi There,</h3>
+                <h1>I Am <span>Web Developer</span></h1>
+                <p>I’m a Professional Web Developer with 5+ years of experience building responsive websites.</p>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+            <div class="hero-img">
+                <img src="https://i.ibb.co/Y4W8kkv/dev.png" alt="Web Developer">
+            </div>
+        </section>
+
+        <!-- Photographer Section -->
+        <section class="photographer">
+            <img src="https://i.ibb.co/7gZsJxr/photo.png" alt="Photographer">
+            <div class="photo-text">
+                <h2>Hello, I Am <span>Photographer</span></h2>
+                <p>I capture the world through my lens, focusing on portraits, nature, and event photography.</p>
+                <ul>
+                    <li>Experience: 8 Years</li>
+                    <li>Completed: 320 Projects</li>
+                    <li>Email: contact@domain.com</li>
+                </ul>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services">
+            <h2>My <span>Services</span></h2>
+            <div class="service-list">
+                <div class="service">Web Design</div>
+                <div class="service">Development</div>
+                <div class="service">Graphic Design</div>
+                <div class="service">Responsive Design</div>
+                <div class="service">Marketing</div>
+                <div class="service">Support</div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio">
+            <h2>My <span>Portfolio</span></h2>
+            <div class="portfolio-items">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog">
+            <h2>My <span>Blog</span></h2>
+            <div class="blog-list">
+                <div class="blog-post">Latest Trend in Business</div>
+                <div class="blog-post">Latest Trend in Business</div>
+                <div class="blog-post">Latest Trend in Business</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h2>Contact <span>Us</span></h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>City: New York</p>
+                <p>Email: support@roton.com</p>
+                <p>Phone: +123 456 789</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 ROTON. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
