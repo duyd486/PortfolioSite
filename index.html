@@ -5,112 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roton Portfolio</title>
-    <link rel="stylesheet" href="Css/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1 class="logo">ROTON</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+<body class="bg-black text-white ">
+    <header class="bg-black py-4 border-b border-gray-800">
+        <div class=" flex justify-between items-center mx-64">
+            <h1 class="text-2xl font-bold text-green-400">ĐẶNG THÁI DUY</h1>
+            <ul class="flex gap-6 text-xl mr-0">
+                <li><a href="#" class="hover:text-green-400">Home</a></li>
+                <li><a href="#" class="hover:text-green-400">About</a></li>
+                <li><a href="#" class="hover:text-green-400">Services</a></li>
+                <li><a href="#" class="hover:text-green-400">Portfolio</a></li>
+                <li><a href="#" class="hover:text-green-400">Blog</a></li>
+                <li><a href="#" class="hover:text-green-400">Contact</a></li>
+            </ul>
         </div>
     </header>
-
-    <div class="bg-[#3E5F44]">
+    <div class="mx-64">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h3>Hi There,</h3>
-                <h1>I Am <span>Web Developer</span></h1>
-                <p>I’m a Professional Web Developer with 5+ years of experience building responsive websites.</p>
-                <a href="Pages/page.html" class="btn">Hire Me</a>
+        <section class="flex flex-col md:flex-row justify-between items-center py-16 px-6 md:px-20">
+            <div class="max-w-lg space-y-4">
+                <h3 class="text-lg text-gray-300">Hi There,</h3>
+                <h1 class="text-4xl font-bold">I Am <span class="text-green-400">Web Developer</span></h1>
+                <p class="text-gray-400">I’m a Professional Web Developer with 5+ years of experience building responsive websites.</p>
+                <a href="#" class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire Me</a>
             </div>
-            <div class="hero-img">
-                <img src="Assets/test.jpg" alt="Web Developer">
+            <div class="mt-10 md:mt-0">
+                <img src="https://i.ibb.co/Y4W8kkv/dev.png" alt="Web Developer" class="w-72 rounded-lg shadow-lg">
             </div>
         </section>
 
         <!-- Photographer Section -->
-        <section class="photographer">
-            <img src="" alt="Photographer">
-            <div class="photo-text">
-                <h2>Hello, I Am <span>Photographer</span></h2>
-                <p>I capture the world through my lens, focusing on portraits, nature, and event photography.</p>
-                <ul>
+        <section class="flex flex-col md:flex-row items-center justify-between py-16 px-6 md:px-20 bg-gray-900">
+            <img src="https://i.ibb.co/7gZsJxr/photo.png" alt="Photographer"
+                class="w-60 rounded-lg border-4 border-green-400 mb-6 md:mb-0">
+            <div class="max-w-lg space-y-4 md:ml-10">
+                <h2 class="text-3xl font-bold">Hello, I Am <span class="text-green-400">Photographer</span></h2>
+                <p class="text-gray-400">I capture the world through my lens, focusing on portraits, nature, and event
+                    photography.</p>
+                <ul class="text-gray-300 space-y-1">
                     <li>Experience: 8 Years</li>
                     <li>Completed: 320 Projects</li>
                     <li>Email: contact@domain.com</li>
                 </ul>
-                <a href="#" class="btn">Hire Me</a>
+                <a href="#"
+                    class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
+                    Me</a>
             </div>
         </section>
 
         <!-- Services -->
-        <section class="services">
-            <h2>My <span>Services</span></h2>
-            <div class="service-list">
-                <div class="service">Web Design</div>
-                <div class="service">Development</div>
-                <div class="service">Graphic Design</div>
-                <div class="service">Responsive Design</div>
-                <div class="service">Marketing</div>
-                <div class="service">Support</div>
+        <section class="py-16 px-6 md:px-20 text-center">
+            <h2 class="text-3xl font-bold">My <span class="text-green-400">Services</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Web Design</div>
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Development</div>
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Graphic Design</div>
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Responsive Design</div>
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Marketing</div>
+                <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Support</div>
             </div>
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio">
-            <h2>My <span>Portfolio</span></h2>
-            <div class="portfolio-items">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+        <section class="py-16 px-6 md:px-20 text-center bg-gray-900">
+            <h2 class="text-3xl font-bold">My <span class="text-green-400">Portfolio</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+                <div class="bg-gray-800 h-40 rounded"></div>
+                <div class="bg-gray-800 h-40 rounded"></div>
+                <div class="bg-gray-800 h-40 rounded"></div>
+                <div class="bg-gray-800 h-40 rounded"></div>
+                <div class="bg-gray-800 h-40 rounded"></div>
+                <div class="bg-gray-800 h-40 rounded"></div>
             </div>
         </section>
 
         <!-- Blog -->
-        <section class="blog">
-            <h2>My <span>Blog</span></h2>
-            <div class="blog-list">
-                <div class="blog-post">Latest Trend in Business</div>
-                <div class="blog-post">Latest Trend in Business</div>
-                <div class="blog-post">Latest Trend in Business</div>
+        <section class="py-16 px-6 md:px-20 text-center">
+            <h2 class="text-3xl font-bold">My <span class="text-green-400">Blog</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+                <div class="bg-gray-800 p-6 rounded">Latest Trend in Business</div>
+                <div class="bg-gray-800 p-6 rounded">Latest Trend in Business</div>
+                <div class="bg-gray-800 p-6 rounded">Latest Trend in Business</div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section class="contact">
-            <h2>Contact <span>Us</span></h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
+        <section class="py-16 px-6 md:px-20 text-center bg-gray-900">
+            <h2 class="text-3xl font-bold">Contact <span class="text-green-400">Us</span></h2>
+            <form class="flex flex-col gap-4 max-w-lg mx-auto mt-8">
+                <input type="text" placeholder="Name" class="p-3 rounded bg-gray-800 text-white outline-none">
+                <input type="email" placeholder="Email" class="p-3 rounded bg-gray-800 text-white outline-none">
+                <textarea placeholder="Message" class="p-3 rounded bg-gray-800 text-white outline-none"></textarea>
+                <button type="submit"
+                    class="bg-green-400 text-black px-6 py-3 rounded font-semibold hover:opacity-80">Send
+                    Message</button>
             </form>
-            <div class="contact-info">
+            <div class="text-gray-400 mt-10 space-y-2">
                 <p>City: New York</p>
                 <p>Email: support@roton.com</p>
                 <p>Phone: +123 456 789</p>
             </div>
         </section>
-    </div>
 
-    <footer>
-        <p>© 2024 ROTON. All Rights Reserved.</p>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-black py-6 text-center text-gray-500">
+        © 2025 ROTON. All Rights Reserved.
     </footer>
 </body>
 
