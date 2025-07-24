@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Bỏ trạng thái ẩn
+                    entry.target.classList.remove('opacity-0', 'translate-y-12', '-translate-x-12');
+                    // Thêm trạng thái hiện
+                    entry.target.classList.add('opacity-100', 'translate-y-0', 'translate-x-0');
+                    observer.unobserve(entry.target); // Chỉ chạy 1 lần
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+    });
+</script>
 <body>
     <h1>Not hellooooo</h1>
+    <div class="opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+        <div class="p-10 bg-white shadow-xl rounded-2xl">Phần 1</div>
+    </div>
+
+    <div class="opacity-0 -translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
+        <div class="p-10 bg-white shadow-xl rounded-2xl">Phần 2</div>
+    </div>
+
+    <div class="opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+        <div class="p-10 bg-white shadow-xl rounded-2xl">Phần 3</div>
+    </div>
 </body>
+
 </html>

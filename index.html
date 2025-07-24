@@ -13,11 +13,30 @@
         }
     </style>
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Bỏ trạng thái ẩn
+                    entry.target.classList.remove('opacity-0', 'translate-y-12', '-translate-x-12');
+                    // Thêm trạng thái hiện
+                    entry.target.classList.add('opacity-100', 'translate-y-0', 'translate-x-0');
+                    observer.unobserve(entry.target); // Chỉ chạy 1 lần
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+    });
+</script>
 
 <body class="bg-black text-white ">
+
     <header class="bg-black py-4 border-b border-gray-800">
-        <div class=" flex justify-between items-center mx-56">
-            <h1 class="text-2xl font-bold text-green-400">ĐẶNG THÁI DUY</h1>
+        <div class=" flex justify-between items-center mx-28">
+            <h1 class="text-2xl font-bold text-green-400">PORTFOLIO</h1>
             <ul class="flex gap-6 text-xl mr-0">
                 <li><a href="#" class="hover:text-green-400">Trang chủ</a></li>
                 <!-- <li><a href="#" class="hover:text-green-400">About</a></li> -->
@@ -31,31 +50,33 @@
     <div class="mx-64">
         <!-- Hero Section -->
         <section class="flex flex-col md:flex-row justify-between items-center h-[800px]">
-            <div class=" space-y-4">
+            <div class=" space-y-4 opacity-0 -translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
                 <h3 class="text-2xl text-gray-300">Xin chào,</h3>
                 <h1 class="text-6xl font-bold">Tôi là <span class="text-green-400">Unity Game Developer</span></h1>
-                <p class="text-gray-400">Sinh viên năm 3 ngành công nghệ thông tin</p>
+                <p class="text-gray-400">Sinh viên năm 3 ngành công nghệ thông tin tại trường Đại học Kiến Trúc Hà Nội
+                </p>
                 <a href="#"
                     class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
                     Me</a>
-                <a href="#"
-                    class=" text-white px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Xem các dự án</a>
+                <a href="#" class=" text-white px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Xem các dự
+                    án</a>
             </div>
-            <div class="bg-gray-500 rounded-full">
+            <div class="bg-gray-500 rounded-full opacity-0 translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
                 <img src="Assets/Avt2.jpg" alt="Web Developer"
-                    class="rounded-full w-[400px] shadow-lg aspect-square object-cover">
+                    class="rounded-full w-[500px] shadow-lg aspect-square object-cover">
             </div>
         </section>
 
         <!-- Photographer Section -->
-        <section class="h-auto bg-gray-900 px-28">
+        <section class="h-auto bg-gray-900 px-28 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
             <div class="flex items-center justify-between py-24">
                 <img src="Assets/Avt.jpg" alt="Photographer"
                     class="w-[400px] rounded-lg aspect-square object-cover border-4 border-green-400">
                 <div class="max-w-xl space-y-4 md:ml-10">
                     <h2 class="text-4xl font-bold">Đồng thời cũng là một <span
                             class="text-green-400">Photographer</span></h2>
-                    <p class="text-gray-400">Tôi chụp các hoạt động sự kiện cosplay tại các khu vực Hải Phòng, Hà Nội
+                    <p class="text-gray-400">Với kinh nghiệm từng chụp các hoạt động sự kiện cosplay tại các khu vực Hải
+                        Phòng, Hà Nội
                     </p>
                     <ul class="text-gray-300 space-y-1">
                         <li>Thời gian: Từ 2022</li>
@@ -68,23 +89,29 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-6 pb-24">
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt1.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt1.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt3.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt3.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt4.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt4.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt5.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt5.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt6.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_40%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt6.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_40%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 transition">
-                    <img src="Assets/pt2.jpg" alt="" class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
+                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                    <img src="Assets/pt2.jpg" alt=""
+                        class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
             </div>
         </section>
