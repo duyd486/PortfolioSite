@@ -14,6 +14,9 @@
     </style>
 </head>
 <script>
+
+    const color = "#fffff";
+
     document.addEventListener('DOMContentLoaded', () => {
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
@@ -32,11 +35,12 @@
     });
 </script>
 
-<body class="bg-black text-white overflow-x-hidden">
+<body class="bg-black text-white overflow-x-hidden bg-gradient-to-r from-black via-[#070D59] to-black
+            animate-gradient">
 
     <header class="bg-black py-1 md:py-4 border-b border-gray-800">
         <div class=" flex justify-between items-center md:mx-28">
-            <h1 class="text-2xl font-bold text-green-400">PORTFOLIO</h1>
+            <h1 class="text-2xl font-bold text-[#5893D4]">PORTFOLIO</h1>
             <ul class="flex gap-6 text-xl mr-0 opacity-0 md:opacity-100">
                 <li><a href="#" class="hover:text-green-400">Trang chủ</a></li>
                 <!-- <li><a href="#" class="hover:text-green-400">About</a></li> -->
@@ -58,11 +62,11 @@
             <div
             class=" space-y-4 opacity-0 -translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
             <h3 class="text-2xl text-gray-300">Xin chào,</h3>
-            <h1 class="text-6xl font-bold">Tôi là <span class="text-green-400">Unity Game Developer</span></h1>
+            <h1 class="text-6xl font-bold">Tôi là <span class="text-[#5893D4]">Unity Game Developer</span></h1>
             <p class="text-gray-400">Sinh viên năm 3 ngành công nghệ thông tin tại trường Đại học Kiến Trúc Hà Nội
             </p>
             <a href="#"
-            class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
+            class="bg-[#5893D4] text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
             Me</a>
             <a href="#" class=" text-white px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Xem các dự
                 án</a>
@@ -74,10 +78,10 @@
             class="h-auto bg-gray-900 px-4 md:px-28 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
             <div class="flex items-center justify-between py-24">
                 <img src="Assets/Avt.jpg" alt="Photographer"
-                    class="w-[400px] rounded-lg aspect-square object-cover hidden md:inline-block border-4 border-green-400">
+                    class="w-[400px] rounded-lg aspect-square object-cover hidden md:inline-block border-4 border-[#5893D4]">
                 <div class="max-w-xl space-y-4 md:ml-10">
                     <h2 class="text-4xl font-bold">Đồng thời cũng là một <span
-                            class="text-green-400">Photographer</span></h2>
+                            class="text-[#5893D4]">Photographer</span></h2>
                     <p class="text-gray-400">Với kinh nghiệm từng chụp các hoạt động sự kiện cosplay tại các khu vực Hải
                         Phòng, Hà Nội
                     </p>
@@ -86,7 +90,7 @@
                         <li>Email: duyd486@gmail.com</li>
                     </ul>
                     <a href="#"
-                        class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
+                        class="bg-[#5893D4] text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
                         Me</a>
                 </div>
             </div>
@@ -129,7 +133,7 @@
 
 
         <section class="py-16 px-6 md:px-20 text-center">
-            <h2 class="text-3xl font-bold">Các <span class="text-green-400">Lĩnh Vực</span></h2>
+            <h2 class="text-3xl font-bold">Các <span class="text-[#5893D4]">Lĩnh Vực</span></h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
                 <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Thiết kế game</div>
                 <div class="bg-gray-800 py-8 rounded hover:bg-gray-700 transition">Lập trình game</div>
@@ -140,7 +144,7 @@
         </section>
 
         <section class="py-16 px-6 md:px-20 text-center bg-gray-900">
-            <h2 class="text-3xl font-bold">My <span class="text-green-400">Portfolio</span></h2>
+            <h2 class="text-3xl font-bold">My <span class="text-[#5893D4]">Portfolio</span></h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
                 <div class="bg-gray-800 h-40 rounded"></div>
                 <div class="bg-gray-800 h-40 rounded"></div>
@@ -152,7 +156,7 @@
         </section>
 
         <section class="py-16 px-6 md:px-20 text-center">
-            <h2 class="text-3xl font-bold">My <span class="text-green-400">Blog</span></h2>
+            <h2 class="text-3xl font-bold">My <span class="text-[#5893D4]">Blog</span></h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
                 <div class="bg-gray-800 p-6 rounded">Latest Trend in Business</div>
                 <div class="bg-gray-800 p-6 rounded">Latest Trend in Business</div>
@@ -181,5 +185,16 @@
     </footer>
     </div>
 </body>
+<style>
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 8s ease infinite;
+}
+</style>
 
 </html>
