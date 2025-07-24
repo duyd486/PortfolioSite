@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,10 +33,10 @@
 
 <body class="bg-black text-white ">
 
-    <header class="bg-black py-4 border-b border-gray-800">
-        <div class=" flex justify-between items-center mx-28">
+    <header class="bg-black py-1 md:py-4 border-b border-gray-800">
+        <div class=" flex justify-between items-center md:mx-28">
             <h1 class="text-2xl font-bold text-green-400">PORTFOLIO</h1>
-            <ul class="flex gap-6 text-xl mr-0">
+            <ul class="flex gap-6 text-xl mr-0 opacity-0 md:opacity-100">
                 <li><a href="#" class="hover:text-green-400">Trang chủ</a></li>
                 <!-- <li><a href="#" class="hover:text-green-400">About</a></li> -->
                 <li><a href="#" class="hover:text-green-400">Hồ sơ</a></li>
@@ -47,28 +46,31 @@
             </ul>
         </div>
     </header>
-    <div class="mx-64">
+    <div class="md:mx-64">
         <!-- Hero Section -->
-        <section class="flex flex-col md:flex-row justify-between items-center h-[800px]">
-            <div class=" space-y-4 opacity-0 -translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
-                <h3 class="text-2xl text-gray-300">Xin chào,</h3>
-                <h1 class="text-6xl font-bold">Tôi là <span class="text-green-400">Unity Game Developer</span></h1>
-                <p class="text-gray-400">Sinh viên năm 3 ngành công nghệ thông tin tại trường Đại học Kiến Trúc Hà Nội
-                </p>
-                <a href="#"
-                    class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
-                    Me</a>
-                <a href="#" class=" text-white px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Xem các dự
-                    án</a>
-            </div>
-            <div class="bg-gray-500 rounded-full opacity-0 translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
+        <section class="md:flex-row-reverse md:justify-between flex flex-col items-center h-[800px]">
+            <div
+                class="bg-gray-500 rounded-full w-60 mt-10 md:mt-0 md:w-[500px] opacity-0 translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
                 <img src="Assets/Avt2.jpg" alt="Web Developer"
-                    class="rounded-full w-[500px] shadow-lg aspect-square object-cover">
+                    class="rounded-full w-full shadow-lg aspect-square object-cover">
+            </div>
+            <div
+            class=" space-y-4 opacity-0 -translate-x-12 transition-all duration-1000 ease-out will-change-transform reveal">
+            <h3 class="text-2xl text-gray-300">Xin chào,</h3>
+            <h1 class="text-6xl font-bold">Tôi là <span class="text-green-400">Unity Game Developer</span></h1>
+            <p class="text-gray-400">Sinh viên năm 3 ngành công nghệ thông tin tại trường Đại học Kiến Trúc Hà Nội
+            </p>
+            <a href="#"
+            class="bg-green-400 text-black px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Hire
+            Me</a>
+            <a href="#" class=" text-white px-6 py-2 rounded font-semibold hover:opacity-80 inline-block">Xem các dự
+                án</a>
             </div>
         </section>
 
         <!-- Photographer Section -->
-        <section class="h-auto bg-gray-900 px-28 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+        <section
+            class="h-auto bg-gray-900 px-28 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
             <div class="flex items-center justify-between py-24">
                 <img src="Assets/Avt.jpg" alt="Photographer"
                     class="w-[400px] rounded-lg aspect-square object-cover border-4 border-green-400">
@@ -89,32 +91,42 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-6 pb-24">
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt1.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt3.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt4.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt5.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-125 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt6.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_40%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
                 </div>
-                <div class="bg-gray-800 h-52  hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
+                <div
+                    class="bg-gray-800 h-52 relative group cursor-pointer hover:bg-gray-700 opacity-0 translate-y-12 transition-all duration-1000 ease-out will-change-transform reveal">
                     <img src="Assets/pt2.jpg" alt=""
                         class="h-52 w-full rounded object-cover object-[center_18%] hover:scale-110 hover:brightness-110 overflow-hidden transition-transform duration-300 ease-in-out">
+                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center rounded">
+                        <span class="text-white text-lg font-semibold">Xem thêm</span>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Services -->
         <section class="py-16 px-6 md:px-20 text-center">
